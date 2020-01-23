@@ -5,3 +5,11 @@ function destructivelyAppendKitten(newName){
   kittens.push(newName)
   return kittens
 }
+function destructivelyPrependKitten(newName){
+  kitens.unshift(newName)
+  return kittens
+}
+function destructivelyRemoveLastKitten(){
+  kittens.pop()
+  return kittens
+}
