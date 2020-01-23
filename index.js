@@ -19,4 +19,18 @@ function destructivelyRemoveFirstKitten(){
 }
 function appendKitten(newName){
   var moarKittens = [...kittens, newName]
+  return moarKittens
+}
+function prependKitten(newName){
+  var moarKittens = [newName, ...kittens]
+  return moarKittens
+}
+function removeLastKitten()
+{
+  var lessKittens = kittens.splice(1, kittens.length-1)
+  return lessKittens
+}
+function removeFirstKitten(){
+  var lessKittens = kittens.splice(1)
+  return lessKittens
 }
